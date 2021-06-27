@@ -1,54 +1,58 @@
 
--- UI LIBRArY BY xHeptc
+-- UI LIBRARY BY xHeptc
 -- MOST OF SCRIPTS ARE NOT MADE BY ME
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("Doomspire BrickBattle | SCAR | UI Lib By xHeptc", "GrapeTheme")
+local Window = Library.CreateLib("Doomspire BrickBattle V1.1 | SCAR | UI Lib By xHeptc", "GrapeTheme")
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Teleport's")
 local Section2 = Tab:NewSection("Script's")
+local SectionRed = Tab:NewSection("Red")
+local SectionBlue = Tab:NewSection("Blue")
+local SectionGreen = Tab:NewSection("Green")
+local SectionYellow = Tab:NewSection("Yellow")
 
-Section:NewButton("Red (Top)", "Red (Top)", function()
+SectionRed:NewButton("Red (Top)", "Red (Top)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-92,131,-1.1)
 end)
 
-Section:NewButton("Red (Down)", "Red (Down)", function()
+SectionRed:NewButton("Red (Down)", "Red (Down)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-131,25,-1.5)
 end)
 
-Section:NewButton("Blue (Top)", "Blue (Top)", function()
+SectionBlue:NewButton("Blue (Top)", "Blue (Top)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2.3,131,91)
 end)
 
-Section:NewButton("Blue (Down)", "Blue (Down)", function()
+SectionBlue:NewButton("Blue (Down)", "Blue (Down)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.4,25,131)
 end)
 
-Section:NewButton("Green (Top)", "Green (Top)", function()
+SectionGreen:NewButton("Green (Top)", "Green (Top)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1.4,131,-81)
 end)
 
-Section:NewButton("Green (Down)", "Green (Down)", function()
+SectionGreen:NewButton("Green (Down)", "Green (Down)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-0.4,25,-131)
 end)
 
-Section:NewButton("Yellow (Top)", "Yellow (Top)", function()
+SectionYellow:NewButton("Yellow (Top)", "Yellow (Top)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(86,131,1)
 end)
 
-Section:NewButton("Yellow (Down)", "Yellow (Down)", function()
+SectionYellow:NewButton("Yellow (Down)", "Yellow (Down)", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(131,25,-1.5 )
 end)
 
 Section2:NewButton("Infinite Jump", "Jump very high!", function()
 
     game.StarterGui:SetCore("SendNotification", {
-        Title = "ReDevs";
-        Text = "- Infinite Jump executed Spam the space button as you can.";
+        Title = "| Scar Scripts";
+        Text = "- Infinite Jump Enabled!";
         Icon = "rbxassetid://4414605822";
-        Duration = 3;
+        Duration = 5;
     })
      
     _G.infinjump = true
