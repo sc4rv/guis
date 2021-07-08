@@ -7,7 +7,6 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 
 local Window = Library.CreateLib("Doomspire BrickBattle V1.1 | SCAR | UI Lib By xHeptc", "GrapeTheme")
 local Tab = Window:NewTab("Main")
-local Section = Tab:NewSection("Teleport's")
 local Section2 = Tab:NewSection("Script's")
 local SectionRed = Tab:NewSection("Red")
 local SectionBlue = Tab:NewSection("Blue")
